@@ -1,29 +1,30 @@
 import React from 'react';
+import '../navbar.css';
+import './cartwidget';
 
 function navbar() {
 
-    let style = {
-        color:"black", backgroundColor:"blue"
-    }
-
   return (
-  <div>
+  <div className='estiloN'>
       <header>
           <h1>Lucí deporte</h1>
       </header>
-      <nav style={style}>
-        <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
+      <nav>
+        <ul className='nav nav-pills nav-fill'>
+            <li className='nav-item'>
                 <a>Inicio</a>
             </li>
-            <li class="nav-item">
+            <li className='nav-item'>
                 <a>Categorías</a>
             </li>
-            <li class="nav-item">
+            <li className='nav-item'>
                 <a>Ofertas</a>
             </li>
-            <li class="nav-item">
+            <li className='nav-item'>
                 <a>Contacto</a>
+            </li>
+            <li>
+                <cartwidget />
             </li>
         </ul>
        </nav>
