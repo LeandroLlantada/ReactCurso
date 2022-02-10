@@ -2,7 +2,7 @@ import React from "react";
 import '../navbar.css';
 import Carrito from '../images/carritoCompras.png';
 
-function iconoCart() {
+function CartWidget() {
 
     return (
     <div className='estiloN'>
@@ -13,4 +13,4 @@ function iconoCart() {
     );
   }
   
-  export default iconoCart;
+  export default CartWidget;

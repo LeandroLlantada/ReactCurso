@@ -1,6 +1,8 @@
 
-function ItemListContainer() {
-  <ItemListContainer greetings="Bienvenidos al ecommerce" />
+function ItemListContainer({greetings}) {
+  return (
+    <h1> {greetings} </h1>
+  );
 }
 
 
