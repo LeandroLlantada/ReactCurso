@@ -13,8 +13,8 @@ const PrimerC = ({nombre}) => {
 
     return <>
       <h1>{contador}</h1>
-      <button onClick={() => onAdd()}></button>;
-      <button onClick={() => setContador(contador-1)}></button>;
+      <button onClick={() => onAdd()}>+</button>;
+      <button onClick={() => setContador(contador-1)}>-</button>;
       <button onClick={() => initial()}></button>
     </>
 }

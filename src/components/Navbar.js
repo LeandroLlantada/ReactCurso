@@ -2,7 +2,7 @@ import React from 'react';
 import '../navbar.css';
 import CartWidget from './CartWidget';
 
-function navbar() {
+function Navbar() {
 
   return (
   <div className='estiloN'>
@@ -32,4 +32,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;
