@@ -1,36 +1,26 @@
+import Item from "./Item";
+import ItemList from "./ItemList";
 
-const productos = [
-  {
-    id:1,
-    nombre: "Arsenal",
-    stock: 25,
-    precio: 2500,
-  },
-  {
-    id:2,
-    nombre: "Real Madrid",
-    stock: 40,
-    precio: 2800,
-  },
-]
+const ItemListContainer = () => {
 
-const ItemList = (productos) => {
-  return (
-    <>
-    {productos.map((item) => (<item key= {item.id} item={item} />))}
-    </>
-  )
-}
+  const productos = [{ItemList}]
+  
+  const tarea = new Promise ((resolve,reject) => {
+    setTimeout(() => {
+      resolve(productos)
+    }, 3000);
+  });
 
-const Item = ({ item }) => {
-  return (
-    <div>
-      <h1>Arsenal</h1>
-      <p></p>
-      <h4>2.500</h4>
-      <button>ver mas detalle</button>
-    </div>
-  );
-};
+  tarea.then((result) => {
+    console.log(result);
+  }).catch(err => {
+    console.log(err)
+  })
 
-export default Item;
+  console.log(tarea);
+
+  
+  return <h1>hola</h1>;
+  }
+
+  export default ItemListContainer
